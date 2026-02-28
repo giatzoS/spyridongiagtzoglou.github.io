@@ -2,130 +2,154 @@
 layout: default
 title: Teaching
 permalink: /teaching/
-description: "Teaching experience of Spyridon Giagtzoglou at Maastricht University."
+description: "Teaching experience  at Maastricht University."
 ---
 
 <div class="section-header">
   <h1>Teaching</h1>
 </div>
 
-<div class="teaching-role">
-  <div class="teaching-role__header">
-    <div class="role-badges">
-      <span class="role-badge role-badge--past">Teaching Assistant</span>
-      <span class="role-arrow">→</span>
-      <span class="role-badge role-badge--current">Junior Lecturer</span>
-    </div>
-    <div class="teaching-role__inst">
-      Maastricht University · Department of Advanced Computing Sciences
+<div class="teaching-timeline">
+
+  <div class="timeline-item">
+    <div class="timeline-dot timeline-dot--current"></div>
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <h3>PhD Candidate</h3>
+        <span class="timeline-period">2025 – Present</span>
+      </div>
+      <div class="timeline-inst">Maastricht University · DACS</div>
+      <ul class="timeline-courses">
+        <li>Computational Statistics <span class="course-note">MSc · 2nd year teaching</span></li>
+      </ul>
     </div>
   </div>
 
-  <div class="teaching-block">
-    <div class="courses-label">Currently Teaching</div>
-    <div class="course-tags">
-      <span class="course-tag course-tag--current">Computational Statistics <span class="course-level">MSc</span></span>
+  <div class="timeline-connector"></div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <h3>Junior Lecturer</h3>
+        <span class="timeline-period">2024 – 2025</span>
+      </div>
+      <div class="timeline-inst">Maastricht University · DACS</div>
+      <ul class="timeline-courses">
+        <li>Project Tutor <span class="course-note">Academic Projects</span></li>
+        <li>Calculus</li>
+        <li>Probability and Statistics</li>
+        <li>Introduction to Programming</li>
+        <li>Object Oriented Programming</li>
+      </ul>
     </div>
   </div>
 
-  <div class="teaching-block">
-    <div class="courses-label">Past Courses</div>
-    <div class="course-tags">
-      <span class="course-tag">Calculus</span>
-      <span class="course-tag">Linear Algebra</span>
-      <span class="course-tag">Probability and Statistics</span>
-      <span class="course-tag">Introduction to Programming</span>
-      <span class="course-tag">Object Oriented Programming</span>
-      <span class="course-tag">Machine Learning</span>
-      <span class="course-tag">Deep Learning</span>
-      <span class="course-tag">Numerical Mathematics</span>
-      <span class="course-tag">Mathematical Modeling</span>
+  <div class="timeline-connector"></div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <h3>Teaching Assistant</h3>
+        <span class="timeline-period">2022 – 2024</span>
+      </div>
+      <div class="timeline-inst">Maastricht University · DACS</div>
+      <ul class="timeline-courses">
+        <li>Calculus</li>
+        <li>Linear Algebra</li>
+        <li>Machine Learning</li>
+        <li>Mathematical Modeling</li>
+        <li>Numerical Mathematics</li>
+        <li>Probability and Statistics</li>
+        <li>Introduction to Programming</li>
+        <li>Object Oriented Programming</li>
+        <li>Deep Learning</li>
+      </ul>
     </div>
   </div>
+
 </div>
 
 <style>
-.role-badges {
+.teaching-timeline {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.timeline-connector {
+  width: 2px;
+  height: 30px;
+  background: #ccc;
+  margin-left: 9px;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  border: 2px solid #999;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.timeline-dot--current {
+  background: #003366;
+  border-color: #003366;
+}
+
+.timeline-content {
+  padding-bottom: 10px;
+}
+
+.timeline-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 4px;
 }
 
-.role-badge {
-  padding: 5px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+.timeline-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
   font-weight: 600;
-  letter-spacing: 0.3px;
 }
 
-.role-badge--past {
-  background: #f0f0f0;
+.timeline-period {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.timeline-inst {
+  font-size: 0.88rem;
   color: #666;
-  border: 1px solid #ddd;
+  margin-bottom: 8px;
 }
 
-.role-badge--current {
-  background: #003366;
-  color: white;
+.timeline-courses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.role-arrow {
-  color: #003366;
-  font-size: 1.2rem;
-  font-weight: bold;
+.timeline-courses li {
+  font-size: 0.9rem;
+  color: #444;
+  padding: 2px 0;
 }
 
-.teaching-role__inst {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 20px;
-}
-
-.teaching-block {
-  margin-bottom: 20px;
-}
-
-.courses-label {
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #003366;
-  margin-bottom: 10px;
-}
-
-.course-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.course-tag {
-  background: #f5f5f5;
-  border: 1px solid #e0e0e0;
-  padding: 5px 12px;
-  border-radius: 15px;
-  font-size: 0.85rem;
-  color: #333;
-}
-
-.course-tag--current {
-  background: #e8f0fb;
-  border-color: #003366;
-  color: #003366;
-  font-weight: 600;
-}
-
-.course-level {
-  font-size: 0.7rem;
-  background: #003366;
-  color: white;
-  padding: 1px 5px;
-  border-radius: 8px;
-  margin-left: 4px;
-  vertical-align: middle;
+.course-note {
+  font-size: 0.78rem;
+  color: #888;
+  margin-left: 6px;
+  font-style: italic;
 }
 </style>
