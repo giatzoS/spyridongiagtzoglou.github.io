@@ -43,21 +43,17 @@ permalink: /
       Maastricht University
     </p>
 
-    <p>
-      I am a Ph.D. candidate at Maastricht University (since February 2025),
-      supervised by Dr. Barbara Franci, Dr. Monica Salvioli, and
-      Prof. Dr. M.H.M. Winands. My research lies at the intersection of
-      mathematics and Generative AI, with a focus on algorithmic questions that
-      connect game theory and optimization to the behavior, performance and
-      evaluation of generative models.
-    </p>
+<p>
+  I am a Ph.D. candidate at Maastricht University (since February 2025), working on
+  convergent algorithms and principled evaluation for generative models.
+</p>
 
-    <p>
-      I hold a B.Sc. in Mathematics from the University of Ioannina (2021) and
-      an M.Sc. in Data Science for Decision Making from Maastricht University
-      (2024). During my studies, I worked as a Teaching Assistant and later as a
-      Junior Lecturer in mathematics and programming courses.
-    </p>
+<p>
+  I hold a B.Sc. in Mathematics from the University of Ioannina (2021) and
+  an M.Sc. in Data Science for Decision Making from Maastricht University (2024).
+  During my studies, I worked as a Teaching Assistant and later as a Junior Lecturer in
+  mathematics and programming courses.
+</p>
 
     <h3>Research Interests</h3>
     <ul class="interests-list">
