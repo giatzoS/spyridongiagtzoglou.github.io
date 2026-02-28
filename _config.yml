@@ -1,0 +1,41 @@
+title: Spyridon Giagtzoglou
+description: >-
+  Ph.D. Candidate in Generative AI & Mathematics at Maastricht University.
+  Research at the intersection of mathematics, game theory, and Generative AI.
+
+url: "https://giatzoS.github.io"
+baseurl: ""   # overridden by configure-pages action at build time
+
+# ── Author ──────────────────────────────────────────────────────────────────
+author:
+  name:               Spyridon Giagtzoglou
+  title:              Ph.D. Candidate in Generative AI & Mathematics
+  institution:        Maastricht University
+  department:         Department of Advanced Computing Sciences
+  github:             giatzoS
+  linkedin:           "https://www.linkedin.com/in/spyridon-giagtzoglou-493b80227/"
+  university_profile: "https://www.maastrichtuniversity.nl/cs-giagtzoglou"
+  photo:              "https://www.maastrichtuniversity.nl/sites/default/files/styles/960x1440/public/ppp/70093283/DACS-Spyridon.Giagtzoglou.jpg"
+
+# ── Plugins ──────────────────────────────────────────────────────────────────
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# ── Build settings ────────────────────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+permalink: pretty
+
+# ── Exclude from processing ───────────────────────────────────────────────────
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .bundle/

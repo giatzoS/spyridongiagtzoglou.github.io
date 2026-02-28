@@ -1,0 +1,15 @@
+# Add publications here as they become available.
+# The publications page will automatically render them.
+#
+# Format:
+# - title:   "Paper Title"
+#   authors: "Giagtzoglou, S., Franci, B., Salvioli, M., Winands, M.H.M."
+#   venue:   "Conference or Journal Name"
+#   year:    2025
+#   links:
+#     - label: PDF
+#       url:   https://...
+#     - label: arXiv
+#       url:   https://...
+#     - label: Code
+#       url:   https://github.com/giatzoS/...

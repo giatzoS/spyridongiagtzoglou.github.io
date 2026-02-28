@@ -1,0 +1,525 @@
+---
+---
+/* =============================================================================
+   Spyridon Giagtzoglou — Academic Portfolio
+   Minimal, clean, navy-blue (#003366) accented
+   ============================================================================= */
+
+/* ── Variables ────────────────────────────────────────────────────────────── */
+$primary:   #003366;
+$primary-h: #004080;
+$bg:        #ffffff;
+$surface:   #f8f9fa;
+$border:    #e4e8ed;
+$text:      #1c1e21;
+$muted:     #6b7280;
+$nav-h:     60px;
+$max-w:     900px;
+
+/* ── Reset & Base ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $text;
+  background: $bg;
+  margin: 0;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color .18s;
+}
+a:hover { color: $primary-h; text-decoration: underline; }
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 .75rem;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.05rem; }
+
+p { margin: 0 0 1rem; }
+
+ul, ol { padding-left: 1.5rem; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Container ────────────────────────────────────────────────────────────── */
+.container {
+  max-width: $max-w;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* =============================================================================
+   Navigation
+   ============================================================================= */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: $nav-h;
+  background: $bg;
+  border-bottom: 1px solid $border;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+
+.nav__inner {
+  max-width: $max-w + 120px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__brand {
+  font-weight: 700;
+  font-size: .97rem;
+  color: $primary;
+  letter-spacing: -.01em;
+  flex-shrink: 0;
+}
+.nav__brand:hover { color: $primary-h; text-decoration: none; }
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links a {
+  font-size: .78rem;
+  font-weight: 500;
+  color: $muted;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color .18s, border-color .18s;
+}
+.nav__links a:hover,
+.nav__links a.active {
+  color: $primary;
+  text-decoration: none;
+  border-color: $primary;
+}
+
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $text;
+  font-size: 1.2rem;
+  padding: .4rem;
+  line-height: 1;
+}
+
+/* Mobile nav */
+@media (max-width: 640px) {
+  .nav__toggle { display: block; }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: $nav-h; left: 0; right: 0;
+    background: $bg;
+    border-bottom: 1px solid $border;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: .5rem 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  }
+
+  .nav__links.open { display: flex; }
+
+  .nav__links a {
+    display: block;
+    padding: .75rem 1.5rem;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+    letter-spacing: .06em;
+  }
+  .nav__links a.active,
+  .nav__links a:hover {
+    border-left-color: $primary;
+    background: rgba(0, 51, 102, .04);
+  }
+}
+
+/* =============================================================================
+   Main & Footer
+   ============================================================================= */
+.main {
+  padding-top: calc(#{$nav-h} + 2.5rem);
+  padding-bottom: 5rem;
+  min-height: calc(100vh - 110px);
+}
+
+.footer {
+  background: $surface;
+  border-top: 1px solid $border;
+  padding: 2rem 0;
+  text-align: center;
+  color: $muted;
+  font-size: .82rem;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: .85rem;
+}
+
+.footer__social a {
+  color: $muted;
+  font-size: 1.3rem;
+  transition: color .18s;
+}
+.footer__social a:hover { color: $primary; }
+
+.footer p { margin: 0; }
+
+/* =============================================================================
+   Section Header
+   ============================================================================= */
+.section-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: .7rem;
+  border-bottom: 2px solid $primary;
+}
+.section-header h1 {
+  color: $primary;
+  margin: 0;
+}
+
+/* =============================================================================
+   About / Home
+   ============================================================================= */
+.about {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about__photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about__photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 10%;
+  border: 3px solid $border;
+  box-shadow: 0 6px 28px rgba(0, 51, 102, .14);
+}
+
+.about__social {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  width: 100%;
+}
+
+.about__social-link {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .83rem;
+  color: $muted;
+  transition: color .18s;
+}
+.about__social-link i {
+  color: $primary;
+  width: 16px;
+  text-align: center;
+  font-size: .9rem;
+}
+.about__social-link:hover { color: $primary; text-decoration: none; }
+
+.about__content h1 { color: $primary; font-size: 2rem; margin-bottom: .2rem; }
+.about__content .subtitle {
+  color: $muted;
+  font-size: .95rem;
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+}
+.about__content h3 {
+  margin-top: 1.75rem;
+  margin-bottom: .6rem;
+  color: $primary;
+  font-size: .95rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+
+/* Mobile about */
+@media (max-width: 640px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about__photo-col { align-items: center; }
+  .about__photo { width: 155px; height: 155px; }
+  .about__social {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__content { text-align: left; }
+}
+
+/* Research interests list */
+.interests-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.interests-list li {
+  padding: .28rem 0 .28rem 1.4rem;
+  position: relative;
+  color: $muted;
+  font-size: .95rem;
+}
+.interests-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: .38rem;
+  color: $primary;
+  font-size: .72rem;
+}
+
+/* =============================================================================
+   Publications
+   ============================================================================= */
+.publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publication-item {
+  padding: 1.4rem 1.5rem;
+  border: 1px solid $border;
+  border-radius: 8px;
+  margin-bottom: 1.1rem;
+  transition: box-shadow .18s;
+}
+.publication-item:hover { box-shadow: 0 4px 18px rgba(0,0,0,.07); }
+.publication-item .pub-title { font-weight: 600; margin-bottom: .2rem; }
+.publication-item .pub-authors { color: $muted; font-size: .88rem; margin-bottom: .2rem; }
+.publication-item .pub-venue { color: $primary; font-size: .88rem; font-style: italic; }
+.publication-item .pub-links { margin-top: .75rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+
+.pubs-empty {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  background: $surface;
+  border: 1px dashed $border;
+  border-radius: 10px;
+  color: $muted;
+}
+.pubs-empty .empty-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  opacity: .35;
+}
+.pubs-empty p { margin: 0; }
+.pubs-empty .empty-sub { font-size: .88rem; margin-top: .35rem; }
+
+/* =============================================================================
+   Projects
+   ============================================================================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 1.75rem;
+  transition: transform .2s, box-shadow .2s;
+  background: $bg;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0, 51, 102, .1);
+}
+
+.project-card__badge {
+  display: inline-block;
+  background: rgba(0, 51, 102, .08);
+  color: $primary;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  padding: .18rem .65rem;
+  border-radius: 20px;
+  margin-bottom: .85rem;
+}
+
+.project-card h3 { margin-bottom: .65rem; }
+.project-card p { color: $muted; font-size: .9rem; line-height: 1.65; margin-bottom: 1.1rem; }
+
+.project-card__meta {
+  color: $primary;
+  font-size: .8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+/* =============================================================================
+   Teaching
+   ============================================================================= */
+.teaching-role {
+  background: $surface;
+  border-left: 4px solid $primary;
+  border-radius: 0 10px 10px 0;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.teaching-role__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: .3rem;
+}
+.teaching-role__header h3 { margin: 0; color: $primary; }
+.teaching-role__header .period {
+  font-size: .82rem;
+  color: $muted;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.teaching-role__inst {
+  color: $muted;
+  font-size: .9rem;
+  margin-bottom: 1.25rem;
+}
+
+.courses-label {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: $muted;
+  margin-bottom: .6rem;
+}
+
+.course-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.course-tag {
+  background: $bg;
+  border: 1px solid $border;
+  border-radius: 20px;
+  padding: .28rem .75rem;
+  font-size: .8rem;
+  color: $text;
+}
+
+/* =============================================================================
+   CV
+   ============================================================================= */
+.cv-section { margin-bottom: 2.5rem; }
+
+.cv-section h2 {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+  color: $muted;
+  border-bottom: 1px solid $border;
+  padding-bottom: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.cv-period {
+  font-size: .82rem;
+  color: $muted;
+  padding-top: .1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-details strong { display: block; margin-bottom: .15rem; }
+.cv-details .inst  { color: $muted; font-size: .88rem; }
+.cv-details .note  { color: $muted; font-size: .82rem; margin-top: .15rem; font-style: italic; }
+
+.cv-request {
+  background: linear-gradient(135deg, rgba(0,51,102,.05), rgba(0,51,102,.02));
+  border: 1px solid rgba(0,51,102,.14);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 2.5rem;
+  font-size: .95rem;
+  line-height: 1.65;
+}
+.cv-request i { color: $primary; margin-right: .4rem; }
+.cv-request a { font-weight: 500; }
+
+@media (max-width: 480px) {
+  .cv-item { grid-template-columns: 1fr; gap: .2rem; }
+  .cv-period { font-size: .8rem; }
+}
+
+/* =============================================================================
+   Badge (publication links)
+   ============================================================================= */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: .2em .65em;
+  font-size: .73rem;
+  font-weight: 600;
+  border-radius: 4px;
+  background: $primary;
+  color: #fff;
+  transition: background .18s;
+}
+.badge:hover { background: $primary-h; text-decoration: none; color: #fff; }
