@@ -50,7 +50,7 @@ permalink: /
 
 <p>
   I hold a B.Sc. in Mathematics from the University of Ioannina (2021) and
-  an M.Sc. in Data Science for Decision Making from Maastricht University (2024).
+  a M.Sc. in Data Science for Decision Making from Maastricht University (2024).
   During my studies, I worked as a Teaching Assistant and later as a Junior Lecturer in
   mathematics and programming courses.
 </p>
