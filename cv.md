@@ -2,7 +2,7 @@
 layout: default
 title: CV
 permalink: /cv/
-description: "Curriculum Vitae of Spyridon Giagtzoglou."
+description: "Curriculum Vitae"
 ---
 
 <div class="section-header">
@@ -31,7 +31,7 @@ description: "Curriculum Vitae of Spyridon Giagtzoglou."
   </div>
 
   <div class="cv-item">
-    <div class="cv-period">2017 &ndash; 2021</div>
+    <div class="cv-period">2016 &ndash; 2021</div>
     <div class="cv-details">
       <strong>B.Sc. in Mathematics</strong>
       <div class="inst">University of Ioannina</div>
@@ -52,14 +52,26 @@ description: "Curriculum Vitae of Spyridon Giagtzoglou."
   </div>
 
   <div class="cv-item">
-    <div class="cv-period">2022 &ndash; 2025</div>
+    <div class="cv-period">2024 &ndash; 2025</div>
     <div class="cv-details">
-      <strong>Teaching Assistant &rarr; Junior Lecturer</strong>
+      <strong>Junior Lecturer</strong>
       <div class="inst">Maastricht University, DACS</div>
-      <div class="note">
-        Mathematics and programming courses: Calculus, Linear Algebra,
-        Probability and Statistics, Machine Learning, Deep Learning, and more.
-      </div>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-period">2022 &ndash; 2024</div>
+    <div class="cv-details">
+      <strong>Teaching Assistant</strong>
+      <div class="inst">Maastricht University, DACS, CE, MSP</div>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-period">2020 &ndash; 2024</div>
+    <div class="cv-details">
+      <strong>Private Tutor (Mathematics)</strong>
+      <div class="inst">Independent</div>
     </div>
   </div>
 </div>
