@@ -8,10 +8,10 @@ description: "Research projects and code by Spyridon Giagtzoglou."
 <div class="section-header">
   <h1>Projects &amp; Research</h1>
   <p class="section-subtitle">
-    My primary research focuses on <strong>convergent training algorithms for GANs</strong>, grounded in
-    <strong>optimization</strong>, <strong>game theory</strong>, and <strong>variational inequality</strong> theory.
-    In parallel, I contribute to an <strong>academic project on evaluation metrics</strong> for generative models.
-    I also explore <strong>LLM evaluation</strong> as a self-directed side project (not part of formal PhD requirements).
+    My primary research focuses on convergent training algorithms for generative models, grounded in
+    optimization, game theory, and variational inequality theory.
+    In parallel, I contribute to an academic project on evaluation metrics for generative models.
+    I also explore LLM evaluation as a self-directed side project.
   </p>
 </div>
 
