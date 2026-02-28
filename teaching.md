@@ -2,7 +2,7 @@
 layout: default
 title: Teaching
 permalink: /teaching/
-description: "Teaching experience  at Maastricht University."
+description: "Teaching experience at Maastricht University."
 ---
 
 <div class="section-header">
@@ -21,6 +21,7 @@ description: "Teaching experience  at Maastricht University."
       <div class="timeline-inst">Maastricht University · DACS</div>
       <ul class="timeline-courses">
         <li>Computational Statistics <span class="course-note">MSc · 2nd year teaching</span></li>
+        <li> Probability and Statistics</li>
       </ul>
     </div>
   </div>
@@ -41,6 +42,7 @@ description: "Teaching experience  at Maastricht University."
         <li>Probability and Statistics</li>
         <li>Introduction to Programming</li>
         <li>Object Oriented Programming</li>
+        <li>Computational Statistics <span class="course-note">MSc</span></li>
       </ul>
     </div>
   </div>
@@ -54,7 +56,7 @@ description: "Teaching experience  at Maastricht University."
         <h3>Teaching Assistant</h3>
         <span class="timeline-period">2022 – 2024</span>
       </div>
-      <div class="timeline-inst">Maastricht University · DACS</div>
+      <div class="timeline-inst">Maastricht University · DACS, CE, MSP</div>
       <ul class="timeline-courses">
         <li>Calculus</li>
         <li>Linear Algebra</li>
